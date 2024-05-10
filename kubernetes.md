@@ -6,7 +6,7 @@
 - **VPC Layout**: Design a VPC that isolates different environments and restricts access.
 - **Dedicated IAM Role for EKS Cluster Creation**: Use dedicated IAM roles for creating and managing the EKS cluster to limit permissions.
 - **Cluster Resource Tagging**: Implement tagging to manage resources effectively and track costs.
-- **Control SSH Access to Nodes**: Restrict SSH access to nodes, preferably using a bastion host [1].
+- **Control SSH Access to Nodes**: Restrict SSH access to nodes, preferably using a bastion host.
 - **EC2 Security Groups for Nodes**: Configure security groups to tightly control inbound and outbound traffic to nodes.
 - **Don’t Install the Kubernetes Dashboard**: Avoid using the Kubernetes dashboard as it can be a security risk if not properly secured.
 - **AWS Fargate for Nodeless EKS**: Use AWS Fargate to run containers without managing servers or clusters, suitable for specific types of workloads.
@@ -27,7 +27,7 @@
 - **Limit use of hostPath**: If necessary, restrict which prefixes can be used and set the volume as read-only to mitigate risks.
 
 #### Network Security
-- **Network Policies**: Implement network policies to control traffic flow at the IP address or port level [4].
+- **Network Policies**: Implement network policies to control traffic flow at the IP address or port level.
 - **Traffic control and Encryption**: Use AWS load balancers with encryption and define security groups and CNIs to manage network traffic securely.
 
 #### Secrets Management
