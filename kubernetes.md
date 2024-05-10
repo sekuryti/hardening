@@ -50,7 +50,7 @@
 
 This guide incorporates current best practices for securing a Kubernetes environment, particularly for AWS EKS, and addresses various aspects from infrastructure setup to runtime security [1][4][8].
 
-** Citations: **
+#### Citations:
 - [1] https://github.com/freach/kubernetes-security-best-practice
 - [2] https://github.com/kabachook/k8s-security
 - [3] https://github.com/krol3/kubernetes-security-checklist
