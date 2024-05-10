@@ -48,15 +48,5 @@
 - **Enable audit logs**: Ensure that all cluster activities are logged and audit logs are enabled.
 - **Monitor logs**: Use tools like CloudWatch Logs Insights and Falco to analyze and monitor log data.
 
-This guide incorporates current best practices for securing a Kubernetes environment, particularly for AWS EKS, and addresses various aspects from infrastructure setup to runtime security [1][4][8].
-
-#### Citations:
-- [1] https://github.com/freach/kubernetes-security-best-practice
-- [2] https://github.com/kabachook/k8s-security
-- [3] https://github.com/krol3/kubernetes-security-checklist
-- [4] https://github.com/SunWeb3Sec/Kubernetes-security
-- [5] https://github.com/magnologan/awesome-k8s-security
-- [6] https://github.com/Vinum-Security/kubernetes-security-checklist
-- [7] https://github.com/rootsongjc/kubernetes-hardening-guidance/blob/main/kubernetes-hardening-guidance-english.md
-- [8] https://github.com/clemenko/nsa_rancher_guide
+This guide incorporates current best practices for securing a Kubernetes environment, particularly for AWS EKS, and addresses various aspects from infrastructure setup to runtime security.
 
