@@ -6,7 +6,7 @@
 - **VPC Layout**: Design a VPC that isolates different environments and restricts access.
 - **Dedicated IAM Role for EKS Cluster Creation**: Use dedicated IAM roles for creating and managing the EKS cluster to limit permissions.
 - **Cluster Resource Tagging**: Implement tagging to manage resources effectively and track costs.
-- **Control SSH Access to Nodes**: Restrict SSH access to nodes, preferably using a bastion host[1].
+- **Control SSH Access to Nodes**: Restrict SSH access to nodes, preferably using a bastion host [1].
 - **EC2 Security Groups for Nodes**: Configure security groups to tightly control inbound and outbound traffic to nodes.
 - **Don’t Install the Kubernetes Dashboard**: Avoid using the Kubernetes dashboard as it can be a security risk if not properly secured.
 - **AWS Fargate for Nodeless EKS**: Use AWS Fargate to run containers without managing servers or clusters, suitable for specific types of workloads.
@@ -27,7 +27,7 @@
 - **Limit use of hostPath**: If necessary, restrict which prefixes can be used and set the volume as read-only to mitigate risks.
 
 #### Network Security
-- **Network Policies**: Implement network policies to control traffic flow at the IP address or port level[4].
+- **Network Policies**: Implement network policies to control traffic flow at the IP address or port level [4].
 - **Traffic control and Encryption**: Use AWS load balancers with encryption and define security groups and CNIs to manage network traffic securely.
 
 #### Secrets Management
@@ -48,15 +48,15 @@
 - **Enable audit logs**: Ensure that all cluster activities are logged and audit logs are enabled.
 - **Monitor logs**: Use tools like CloudWatch Logs Insights and Falco to analyze and monitor log data.
 
-This guide incorporates current best practices for securing a Kubernetes environment, particularly for AWS EKS, and addresses various aspects from infrastructure setup to runtime security[1][4][8].
+This guide incorporates current best practices for securing a Kubernetes environment, particularly for AWS EKS, and addresses various aspects from infrastructure setup to runtime security [1][4][8].
 
-Citations:
-[1] https://github.com/freach/kubernetes-security-best-practice
-[2] https://github.com/kabachook/k8s-security
-[3] https://github.com/krol3/kubernetes-security-checklist
-[4] https://github.com/SunWeb3Sec/Kubernetes-security
-[5] https://github.com/magnologan/awesome-k8s-security
-[6] https://github.com/Vinum-Security/kubernetes-security-checklist
-[7] https://github.com/rootsongjc/kubernetes-hardening-guidance/blob/main/kubernetes-hardening-guidance-english.md
-[8] https://github.com/clemenko/nsa_rancher_guide
+** Citations: **
+- [1] https://github.com/freach/kubernetes-security-best-practice
+- [2] https://github.com/kabachook/k8s-security
+- [3] https://github.com/krol3/kubernetes-security-checklist
+- [4] https://github.com/SunWeb3Sec/Kubernetes-security
+- [5] https://github.com/magnologan/awesome-k8s-security
+- [6] https://github.com/Vinum-Security/kubernetes-security-checklist
+- [7] https://github.com/rootsongjc/kubernetes-hardening-guidance/blob/main/kubernetes-hardening-guidance-english.md
+- [8] https://github.com/clemenko/nsa_rancher_guide
 
